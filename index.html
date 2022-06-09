@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product app</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="navbar navbar-light bg-light">
+        <a href="" class="navbar-brand">
+            Product app
+        </a>
+    </div>
+
+    <div class="container mb-5">
+        <div id="app" class="row pt-5">
+            <div class="col-md-4 mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add producto</h4>
+
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="mb-3">
+                            <input type="text" id="name"  placeholder="Product Name" class="form-control"
+                                autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" id="price"  step="0.01" placeholder="Product Price" class="form-control"
+                                autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" min="2000" max="2022" value="2022" id="year" placeholder="Year product" class="form-control" autocomplete="off">
+                        </div>
+                        <input type="submit" value="Save" class="btn btn-primary w-100">
+                    </form>
+                </div>
+            </div>
+            <div id="product-list" class="col-md-8">
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
